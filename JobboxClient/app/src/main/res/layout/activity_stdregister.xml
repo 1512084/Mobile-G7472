@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StdRegisterActivity" >
+
+    <ScrollView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+
+                    android:text="@string/app_name"
+                    android:textSize="30dp"
+                    android:textColor="@android:color/holo_red_light" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="16dp"
+                android:text="Date of birth: "
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <EditText
+                android:id="@+id/editTextBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:maxLength="25"
+                android:textColorHint="@color/cardview_light_background"
+                android:textColor="@android:color/holo_red_light" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Sex: "
+                    android:textColor="@android:color/holo_blue_bright" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pick"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pickMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@android:color/holo_blue_bright" />
+
+                    <RadioButton
+                        android:id="@+id/pickfemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/pickcpn"
+                        android:text="Female"
+                        android:textColor="@android:color/holo_blue_bright" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:text="University: "
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <EditText
+                android:id="@+id/editTextSchool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="School"
+                android:inputType="textCapWords"
+                android:maxLength="32"
+                android:textColorHint="@color/cardview_light_background"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Major: "
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <EditText
+                android:id="@+id/editTextMajor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Faculty"
+                android:inputType="textCapWords"
+                android:maxLength="32"
+                android:textColorHint="@color/cardview_light_background"
+                android:textColor="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Expected: "
+                android:textColor="@android:color/holo_blue_bright" />
+
+            <EditText
+                android:id="@+id/editTextExpt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Expected Year"
+                android:inputType="date"
+                android:textColorHint="@color/cardview_light_background"
+                android:textColor="@android:color/holo_red_light" />
+
+
+
+
+            <Button
+                android:id="@+id/buttonRegister"
+                style="@style/DefaultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:text="@string/register"
+                tools:ignore="InefficientWeight" />
+
+            <TextView
+                android:id="@+id/textViewLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/back_to_register"
+                android:textColor="@android:color/holo_blue_bright" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

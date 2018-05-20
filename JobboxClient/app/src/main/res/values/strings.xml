@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">JOBBOX</string>
+    <string name="create_account"><font color="#00ff00">text</font></string>
+    <string name="email">example@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_post_fragment">PostFragment</string>
+    <string name="name">Full name</string>
+    <string name="address">123/3 đường Lê Lợi, phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh, Việt Nam</string>
+    <string name="phone">(+84) 1999 999 999</string>
+    <string name="company">Company</string>
+    <string name="student">Student</string>
+    <string name="next">Next</string>
+    <string name="back_to_register">Come back</string>
+    <string name="series">Series number</string>
+    <string name="date">DD-MM-YYYY</string>
+    <string name="field">Field</string>
+    <string name="desc">Short Description</string>
+    <string-array name="kind_search">
+        <item>Name</item>
+        <item>Location</item>
+        <item>Skill</item>
+    </string-array>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="title_activity_company">CompanyActivity</string>
+    <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>American Samoa</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Anguilla</item>
+        <item>Antarctica</item>
+        <item>Vietnam</item>
+    </string-array>
+</resources>
